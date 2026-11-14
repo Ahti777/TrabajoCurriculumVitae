@@ -1,0 +1,282 @@
+body {
+  background: linear-gradient(to bottom right, #1e293b, #581c87, #1e293b);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+}
+
+.contenedor-principal {
+  width: 100%;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+/* Cabecera: foto y datos en una fila (flexbox), con fondo en degradado */
+.header {
+  display: flex;
+  background: linear-gradient(to right, #9333ea, #3b82f6);
+  color: white;
+  padding: 30px;
+  text-align: left;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 3em;
+}
+
+.headerContent{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+  border: 4px solid white;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.header h2 {
+  font-size: 24px;
+  font-weight: normal;
+  opacity: 0.9;
+  margin: 10px 0;
+}
+
+.seccion {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 30px;
+  margin: 20px;
+  background-color: #f9fafb;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.titulo-seccion {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+.body {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.lateralSeccion{
+  width: 35%;
+}
+
+.principalSeccion{
+  width: 65%;
+}
+
+.lista-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.habilidad {
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.lista-habilidades {
+  display: flex;
+  flex-direction: column;
+}
+
+.textHabilidad {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.barraHabilidades {
+  width: 100%;
+  height: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.barraHabilidades::-webkit-progress-bar {
+  background: #e5e7eb;
+}
+
+.barraHabilidades::-webkit-progress-value {
+  background: linear-gradient(to right, #9333ea, #3b82f6);
+  border-radius: 999px;
+}
+
+.lista-idiomas{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.idioma {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.idioma .nivel{
+  background: linear-gradient(to right, #ede9fe, #dbeafe);
+  color: #9333ea;
+  font-size:medium;
+  padding: 5px;
+  border-radius: 20px;
+  border: 2px solid #9333ea;
+  font-weight: 700;
+}
+
+.lista-certificaciones{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Etiqueta de cada certificación */
+.certificacion{
+  background: linear-gradient(to right, #ede9fe, #dbeafe);
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid #9333ea;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.item-experiencia {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border-left: 4px solid #9333ea;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Flexbox: coloca puesto y periodo en una fila, uno a cada lado */
+.titulo-experiencia{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-experiencia h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 5px 0;
+}
+
+
+.empresa {
+  color: #9333ea;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.periodo {
+  background-color: #e5e7eb;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 14px;
+  margin: 5px 0;
+  color: #4b5563;
+}
+
+.lista-proyectos{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item-proyecto{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  background: linear-gradient(to right, #ede9fe, #dbeafe);
+  color: #9333ea;
+  font-size:medium;
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid #9333ea;
+  font-weight: 700;
+}
+
+.item-proyecto h3{
+  color: #1e293b;
+}
+
+.item-proyecto p{
+  font-size: small;
+  color:#8b9097
+}
+
+.item-educacion {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border-left: 4px solid #3b82f6;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.item-educacion h3{
+  color: #1e293b;
+}
+
+.estadisticas {
+  background: linear-gradient(to right, #9333ea, #3b82f6);
+  color: white;
+}
+
+.titulo-estadisticas {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.lista-estadisticas {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.estadistica-numero {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.estadistica-texto {
+  font-size: 14px;
+  margin: 5px 0 0 0;
+  opacity: 0.9;
+}
