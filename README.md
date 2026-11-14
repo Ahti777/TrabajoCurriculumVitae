@@ -21,4 +21,3 @@ Hay que diferenciar React de Vite. React es la biblioteca con la que se construy
 Para crear un proyecto debes utilizar los siguientes comandos y opciones:
 1. `npm create vite@latest nombre-del-proyecto`
 2. Elige React -> JavaScript -> OXlint
-# TrabajoCurriculumVitae
